@@ -1,0 +1,43 @@
+.movie__container{
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+
+.loading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+  width: 100%;
+  height: calc(100vh - 4rem);
+}
+
+.movie__card img{
+  border: 0;
+  border-radius: 0.75rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.movie__card h1{
+  margin: 1rem 0;
+}
+
+.movie__buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.vote_average{
+  margin-top: 1rem;
+}
+
+.movie__buttons .external{
+  background-color: brown;
+}
+.movie__buttons .external:hover{
+  background-color: red;
+}
