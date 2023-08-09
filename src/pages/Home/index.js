@@ -30,8 +30,9 @@ export function Home() {
   
   if(loading){
     return(
-      <div className='loading'>
-      <h2>Espere um pouco... carregando lista de filmes.</h2>
+      <div className='loading__container'>
+      <span className='loading'></span>
+      <h2>Espere um pouco... carregando lista de filmes</h2>
     </div>
     );
   }

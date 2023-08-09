@@ -24,7 +24,7 @@ export function Movie() {
         })
         .then((Response) => {
           setMovie(Response.data);
-          setLoading(false);
+         setLoading(false);
         })
         .catch(() => {
           //console.log('filme não localizado');
@@ -40,11 +40,12 @@ export function Movie() {
     };
   }, []);
 
-  if (loading) {
-    return (
-      <div className="loading">
-        <h2>Espere um pouco... carregando filme.</h2>
-      </div>
+  if(loading){
+    return(
+      <div className='loading__container'>
+      <span className='loading'></span>
+      <h2>Espere um pouco... carregando lista de filmes</h2>
+    </div>
     );
   }
 
