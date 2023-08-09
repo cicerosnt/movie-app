@@ -10,11 +10,15 @@ export function Header() {
           Movie App
         </Link>
         <ul>
+        <li>
+            <Link className='item_menu' to="/info">
+              Info
+            </Link>
+          </li>
           <li>
-            <Link className='item_menu' to="/movie">
+            <Link className='item_menu' to="/favorite">
               Favoritos
             </Link>
-            
           </li>
         </ul>
       </nav>

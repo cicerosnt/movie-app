@@ -31,31 +31,38 @@ export function Home() {
   if(loading){
     return(
       <div className='loading__container'>
-      <span className='loading'></span>
-      <h2>Espere um pouco... carregando lista de filmes</h2>
-    </div>
+        <span className='loading'></span>
+        <h2>Espere um pouco... carregando lista de filmes</h2>
+      </div>
     );
   }
 
   return (
-    <div className="home__container">
-      {movies.map((movie) => {
-        return (
-          <Link className='article' to={`/movie/${movie.id}`} key={movie.id}>
-            <img
-              width="100"
-              src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`}
-              alt=""
-              srcset=""
-            />
-            <div className="home__data">
-              <h1>{movie.title}</h1>
-              <p>{movie.genres}</p>
-            </div>
-          </Link>
-        );
-      })}
-    </div>
-    
+    <>
+      <div className="container">
+        <div className="headers">
+          <h1>Lista de Filmes</h1>
+          Ultimos lançamentos da semana
+        </div>
+      </div>
+      <div className="container">
+        
+        {movies.map((movie) => {
+          return (
+            <Link className='article' to={`/movie/${movie.id}`} key={movie.id}>
+              <img
+                width="100"
+                src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`}
+                alt={movie.title}
+              />
+              <div className="home__data">
+                <h1>{movie.title}</h1>
+                <p>{movie.genres}</p>
+              </div>
+            </Link>
+          );
+        })}
+      </div>
+    </>
   );
 }

@@ -10,12 +10,12 @@ header nav {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  max-width: 1000px;
   height: 4rem;
   gap: 1rem;
-  color: antiquewhite;
+  color: white;
 
-  margin-left: 4em;
-  margin-right: 4em;
+  margin: 0 auto;
 }
 
 header nav .logo,

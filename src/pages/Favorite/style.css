@@ -1,0 +1,37 @@
+.container div {
+  position: relative;
+}
+
+.container div .movie__buttons {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  gap: 0.35rem;
+}
+
+.container div .movie__buttons .btn {
+  margin: 0;
+  padding: 2px;
+  width: 30px;
+  height: 30px;
+  font-size: 10px;
+  
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container div .movie__buttons svg{
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+.container .home__data{
+  padding: 0.75rem;
+}
